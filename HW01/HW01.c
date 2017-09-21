@@ -129,6 +129,7 @@ int main(int argc, char *argv[]) {
     if (!(B & 0xFFFFF)) {
       printf("Processing B = %08lX\n", B);
     }
+    // Expansion
     int sbox_input[8] = {0, };
     for (int i = 0; i < 7; i++) {
       sbox_input[i] = (B >> (27-4*i)) & 0x3F;
